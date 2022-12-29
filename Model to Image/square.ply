@@ -1,0 +1,29 @@
+ply
+format ascii 1.0
+comment single cube with colored faces
+element vertex 8
+comment cube vertices
+property float x
+property float y
+property float z
+element face 6
+property list uchar int vertex_indices
+property uchar red
+property uchar green
+property uchar blue
+comment 1,1,1;1,1,-1;1,-1,1;1,-1,-1
+end_header
+1 1 1
+1 1 -1
+1 -1 1
+1 -1 -1
+-1 1 1
+-1 1 -1
+-1 -1 1
+-1 -1 -1
+4 0 1 3 2 255 255 255
+4 4 5 7 6 255 0 0
+4 0 1 5 4 0 255 0
+4 2 3 7 6 0 0 255
+4 0 2 6 4 122 122 0
+4 1 3 7 5 0 122 122
